@@ -34,5 +34,12 @@ namespace WindowsFormsDesktopApp.Forms
             dashboardUC1.BringToFront();
             labelTitle.Text = "Dashboard";
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            donnersUC1.BringToFront();
+            labelTitle.Text = "Add or Update Donner's Record";
+
+        }
     }
 }

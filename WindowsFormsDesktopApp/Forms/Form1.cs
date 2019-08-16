@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsFormsDesktopApp.Forms;
 
 namespace WindowsFormsDesktopApp
 {
@@ -30,6 +31,13 @@ namespace WindowsFormsDesktopApp
         private void button1_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            formDashboard obj = new formDashboard();
+            obj.Show();
+            this.Hide();
         }
     }
 }
