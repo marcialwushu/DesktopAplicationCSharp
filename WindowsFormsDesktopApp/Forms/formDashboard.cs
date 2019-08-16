@@ -15,6 +15,8 @@ namespace WindowsFormsDesktopApp.Forms
         public formDashboard()
         {
             InitializeComponent();
+            dashboardUC1.BringToFront();
+            labelTitle.Text = "Dashboard";
         }
 
         private void formDashboard_Load(object sender, EventArgs e)
@@ -25,6 +27,12 @@ namespace WindowsFormsDesktopApp.Forms
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            dashboardUC1.BringToFront();
+            labelTitle.Text = "Dashboard";
         }
     }
 }

@@ -37,14 +37,17 @@
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelHeader = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.labelTitle = new System.Windows.Forms.Label();
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.panelContainer = new System.Windows.Forms.Panel();
+            this.dashboardUC1 = new WindowsFormsDesktopApp.UserControls.DashboardUC();
+            this.donnersUC1 = new WindowsFormsDesktopApp.UserControls.DonnersUC();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panelContainer.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -132,6 +135,7 @@
             this.button1.Text = "    Dashboard";
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // pictureBox1
             // 
@@ -152,15 +156,15 @@
             this.panelHeader.Size = new System.Drawing.Size(842, 21);
             this.panelHeader.TabIndex = 1;
             // 
-            // label1
+            // labelTitle
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(202, 38);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(95, 19);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Dashboard";
+            this.labelTitle.AutoSize = true;
+            this.labelTitle.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTitle.Location = new System.Drawing.Point(202, 38);
+            this.labelTitle.Name = "labelTitle";
+            this.labelTitle.Size = new System.Drawing.Size(95, 19);
+            this.labelTitle.TabIndex = 2;
+            this.labelTitle.Text = "Dashboard";
             // 
             // button6
             // 
@@ -216,18 +220,39 @@
             // 
             // panelContainer
             // 
+            this.panelContainer.BackColor = System.Drawing.Color.White;
+            this.panelContainer.Controls.Add(this.donnersUC1);
+            this.panelContainer.Controls.Add(this.dashboardUC1);
             this.panelContainer.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panelContainer.Location = new System.Drawing.Point(177, 78);
             this.panelContainer.Name = "panelContainer";
             this.panelContainer.Size = new System.Drawing.Size(842, 491);
             this.panelContainer.TabIndex = 3;
             // 
+            // dashboardUC1
+            // 
+            this.dashboardUC1.BackColor = System.Drawing.Color.White;
+            this.dashboardUC1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dashboardUC1.Location = new System.Drawing.Point(0, 0);
+            this.dashboardUC1.Name = "dashboardUC1";
+            this.dashboardUC1.Size = new System.Drawing.Size(842, 491);
+            this.dashboardUC1.TabIndex = 0;
+            // 
+            // donnersUC1
+            // 
+            this.donnersUC1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.donnersUC1.Location = new System.Drawing.Point(0, 0);
+            this.donnersUC1.Name = "donnersUC1";
+            this.donnersUC1.Size = new System.Drawing.Size(842, 491);
+            this.donnersUC1.TabIndex = 1;
+            // 
             // formDashboard
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1019, 569);
             this.Controls.Add(this.panelContainer);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.labelTitle);
             this.Controls.Add(this.panelHeader);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button9);
@@ -240,6 +265,7 @@
             this.Load += new System.EventHandler(this.formDashboard_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panelContainer.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -255,11 +281,13 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelTitle;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Panel panelContainer;
+        private UserControls.DashboardUC dashboardUC1;
+        private UserControls.DonnersUC donnersUC1;
     }
 }
