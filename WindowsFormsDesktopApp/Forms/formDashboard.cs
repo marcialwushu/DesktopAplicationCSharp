@@ -41,5 +41,10 @@ namespace WindowsFormsDesktopApp.Forms
             labelTitle.Text = "Add or Update Donner's Record";
 
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

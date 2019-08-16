@@ -43,8 +43,8 @@
             this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.panelContainer = new System.Windows.Forms.Panel();
-            this.dashboardUC1 = new WindowsFormsDesktopApp.UserControls.DashboardUC();
             this.donnersUC1 = new WindowsFormsDesktopApp.UserControls.DonnersUC();
+            this.dashboardUC1 = new WindowsFormsDesktopApp.UserControls.DashboardUC();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelContainer.SuspendLayout();
@@ -179,6 +179,7 @@
             this.button6.TabIndex = 1;
             this.button6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button7
             // 
@@ -230,6 +231,14 @@
             this.panelContainer.Size = new System.Drawing.Size(842, 491);
             this.panelContainer.TabIndex = 3;
             // 
+            // donnersUC1
+            // 
+            this.donnersUC1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.donnersUC1.Location = new System.Drawing.Point(0, 0);
+            this.donnersUC1.Name = "donnersUC1";
+            this.donnersUC1.Size = new System.Drawing.Size(842, 491);
+            this.donnersUC1.TabIndex = 1;
+            // 
             // dashboardUC1
             // 
             this.dashboardUC1.BackColor = System.Drawing.Color.White;
@@ -238,14 +247,6 @@
             this.dashboardUC1.Name = "dashboardUC1";
             this.dashboardUC1.Size = new System.Drawing.Size(842, 491);
             this.dashboardUC1.TabIndex = 0;
-            // 
-            // donnersUC1
-            // 
-            this.donnersUC1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.donnersUC1.Location = new System.Drawing.Point(0, 0);
-            this.donnersUC1.Name = "donnersUC1";
-            this.donnersUC1.Size = new System.Drawing.Size(842, 491);
-            this.donnersUC1.TabIndex = 1;
             // 
             // formDashboard
             // 
